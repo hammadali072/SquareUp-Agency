@@ -1,0 +1,164 @@
+@import '../../common-styles/variables.scss';
+
+.FAQSection{
+    padding: 0 15px;
+
+    .container_fluid{
+        padding: 0;
+        border-left: 2px solid $Grey-15;
+        border-right: 2px solid $Grey-15;
+        overflow-x: hidden;
+
+        .row_custom{
+            justify-content: center;
+            padding: 80px 0;
+
+            @media (max-width: 1440px) {
+                padding: 60px 0;
+            }
+            
+            .col_FAQ{
+                border-left: 2px solid $Grey-15;
+                border-right: 2px solid $Grey-15;
+                border-top: 2px solid $Grey-15;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.col_FaqCart_otr{
+    border-bottom: 2px solid $Grey-15;
+    width: 100%;
+
+    .col_FaqCart_inr{
+        padding: 34px 50px;
+
+        @media (max-width: 1440px) {
+            padding: 30px 40px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 20px 30px;
+        }
+
+        .Accordion_item {
+            display: flex;
+            align-items: center;
+            gap: 0 30px;
+
+            @media (max-width: 1440px) {
+                gap: 0 20px;
+            }
+
+            .num_otr{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 12px;
+                border: 1px solid #2E2E2E;
+                background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0.00) 100%);
+                width: 80px;
+                height: 80px;
+
+                @media (max-width: 1440px) {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 8px;
+                }
+
+                @media (max-width: 575px) {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                }
+
+                .num{
+                    color: $White;
+                }
+            }
+
+            .Accordion_header_body{
+                flex: 1;
+
+                .accordion-button{
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 0 20px;
+                    font-size: 22px;
+                    line-height: 28px;
+                    font-family: $font-family-Barlow-Medium;
+                    padding: 24px 0;
+                    border-radius: 0;
+                    color: $White;
+                    background-color: transparent;
+                    transition: .3s;
+                    width: 100%;
+                    
+                    @media (max-width: 1440px) {
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding: 24px 0 16px;
+                    }
+
+                    @media (max-width: 575px) {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    svg{
+                        transition: .3s;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+            
+                    &::after {
+                        display: none;
+                    }
+            
+                    &:not(.collapsed) {
+                        box-shadow: none;
+                        color: $Green-50;
+                        border-radius: 6px;
+            
+                        svg {
+                            transform: rotate(135deg);
+                        }
+                    }
+
+                    .collapsed{
+                        border-radius: 0;
+                    }
+                }
+
+                .accordion-body{
+                    padding: 0;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-family: $font-family-Barlow-Regular;
+                    color: $Grey-90;
+
+                    @media (max-width: 1440px) {
+                      font-size: 16px;
+                      line-height: 24px;
+                    }
+                  
+                    @media (max-width: 575px) {
+                      font-size: 14px;
+                      line-height: 21px;
+                    }
+                }
+            }
+        }
+
+        .accordion-item{
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+        }
+    }
+}

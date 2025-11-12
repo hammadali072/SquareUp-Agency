@@ -1,0 +1,82 @@
+@import '../../common-styles/variables.scss';
+
+.digi_world_section {
+    background-image: url('../../assets//service-section-wrapper-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+
+    @media (max-width: 1440px) {
+        padding: 100px 32px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 50px 16px;
+    }
+
+    .digi_world_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px 0;
+        width: 900px;
+        max-width: 100%;
+        margin: auto;
+
+        @media (max-width: 1440px) {
+            gap: 40px 0;
+        }
+
+        @media (max-width: 576px) {
+            gap: 28px 0;
+        }
+
+        .digi_world_logo_main {
+            display: flex;
+            justify-content: center;
+
+            .digi_world_logo_otr {
+                width: 80px;
+                height: 80px;
+
+                @media (max-width: 1440px) {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @media (max-width: 576px) {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                .digi_world_logo {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .digi_world_content {
+            text-align: center;
+
+            .digi_world_heading {
+                color: $White;
+
+                @media (max-width: 576px) {
+                    font-size: 24px;
+                }
+            }
+
+            .digi_world_desc {
+                color: $Grey-90;
+                margin-top: 14px;
+            }
+        }
+
+        .action_otr {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

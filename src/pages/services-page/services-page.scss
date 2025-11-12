@@ -1,0 +1,109 @@
+@import '../../common-styles/variables.scss';
+
+.ServicesPage{
+    padding: 0 15px;
+
+    .container_fluid{
+        padding: 0;
+        border-left: 2px solid $Grey-15;
+        border-right: 2px solid $Grey-15;
+        overflow-x: hidden;
+
+        .design_section{
+
+            .design_section_otr{
+
+                .design_section_inr{
+
+                    .design_section_wrapper{
+                        border-bottom: 2px solid $Grey-15;
+                        padding: 50px;
+
+                        @media (max-width: 1440px) {
+                            padding: 40px;
+                        }
+
+                        @media (max-width: 575px) {
+                            padding: 40px 10px;
+                            text-align: center;
+                        }
+
+                        .design_wrapper_heading{
+                            color: $Grey-60;
+                        }
+                    }
+
+                    .row_custom{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.col_servicePageCart_otr{
+    border-right: 2px solid $Grey-15;
+    border-bottom: 2px solid $Grey-15;
+
+    .col_servicePageCart_inr{
+        padding: 50px;
+
+        @media (max-width: 1440px) {
+            padding: 40px;
+        }
+
+        @media (max-width: 1200px) {
+            padding: 30px 20px;
+        }
+
+        .icon_otr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 88px;
+            height: 88px;
+            border-radius: 12px;
+            border: 1px solid $Grey-15;
+            background: linear-gradient(131deg, rgba(158, 255, 0, 0.20) -66.81%, rgba(158, 255, 0, 0.00) 37.19%);
+
+            @media (max-width: 1440px) {
+                width: 74px;
+                height: 74px;
+            }
+
+            @media (max-width: 575px) {
+                width: 56px;
+                height: 56px;
+            }
+
+            .icon{
+                width: 40px;
+                height: 40px;
+
+                @media (max-width: 1440px) {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                @media (max-width: 575px) {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .heading{
+            color: $Grey-90;
+            margin-top: 30px;
+
+            @media (max-width: 1440px) {
+                margin-top: 24px;
+            }
+
+            @media (max-width: 767px) {
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import '../../common-styles/variables.scss';
+
+.ChooseUsSection{
+    padding: 0 15px;
+
+    .container_fluid{
+        padding: 0;
+        overflow-x: hidden;
+        border-left: 2px solid $Grey-15;
+        border-right: 2px solid $Grey-15;
+
+        .row_custom{
+
+        }
+    }
+}
+
+.col_chooseUs_box_otr{
+    border-bottom: 2px solid $Grey-15;
+    border-right: 2px solid $Grey-15;
+
+    .col_chooseUs_box_inr{
+        padding: 80px;
+
+        @media (max-width: 1440px) {
+            padding: 60px;
+        }
+
+        @media (max-width: 1200px) {
+            padding: 40px 30px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 30px 20px;
+        }
+
+        .icon_main{
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto 1fr;
+            gap: 0 14px;
+            margin-bottom: 40px;
+
+            @media (max-width: 1440px) {
+                margin-bottom: 30px;
+            }
+
+            @media (max-width: 1200px) {
+                margin-bottom: 24px;
+            }
+
+            .icon_otr{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 88px;
+                height: 88px;
+                border-radius: 8px;
+                border: 1px solid #2E2E2E;
+                background: linear-gradient(229deg, rgba(158, 255, 0, 0.20) -68.25%, rgba(158, 255, 0, 0.00) 32.16%), linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0.00) 100%);
+
+                @media (max-width: 1440px) {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                @media (max-width: 767px) {
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 6px;
+                }
+
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                    object-position: center;
+
+                    @media (max-width: 1440px) {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+
+            .heading{
+                color: $White;
+                transition: .3s;
+
+                &:hover{
+                    color: $Green-50;
+                }
+            }
+        }
+
+        .desc{
+            color: $Grey-90;
+        }
+    }
+}

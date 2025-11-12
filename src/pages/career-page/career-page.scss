@@ -1,0 +1,205 @@
+@import '../../common-styles/variables.scss';
+
+.CareerPage{
+    padding: 0 15px;
+
+    .container_fluid{
+        padding: 0;
+        border-left: 2px solid $Grey-15;
+        border-right: 2px solid $Grey-15;
+        overflow-x: hidden;
+
+        .CareerWorkSection{
+            
+        }
+
+        .OpeningSection{
+
+            .opening_section_wrapper{
+                padding: 120px 50px 50px;
+                border-bottom: 2px solid $Grey-15;
+
+                @media (max-width: 1440px) {
+                    padding: 80px 40px 40px;
+                }
+
+                @media (max-width: 992px) {
+                    padding: 60px 30px 30px;
+                }
+
+                @media (max-width: 575px) {
+                    padding: 40px 16px;
+                }
+
+                .opening_wrapper_heading{
+                    color: $White;
+                }
+
+                .opening_wrapper_desc{
+                    color: $Grey-90;
+                    margin-top: 14px;
+                }
+            }
+
+            .design_job_section{
+
+                .design_job_wrapper{
+                    border-bottom: 2px solid $Grey-15;
+                    padding: 50px;
+
+                    @media (max-width: 1440px) {
+                        padding: 40px;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding: 40px 10px;
+                        text-align: center;
+                    }
+
+                    .design_job_wrapper_heading{
+                        color: $Grey-60;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.col_careerWorkCart_otr{
+    border-right: 2px solid $Grey-15;
+    border-bottom: 2px solid $Grey-15;
+
+    .col_careerWorkCart_inr{
+        padding: 100px 50px;
+
+        @media (max-width: 1440px) {
+            padding: 80px 40px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 60px 30px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 40px 24px;
+        }
+
+        .careerWorkCart_heading{
+            color: $Green-80;
+            padding-bottom: 50px;
+            border-bottom: 2px solid $Grey-15;
+
+            @media (max-width: 1440px) {
+                padding-bottom: 40px;
+            }
+
+            @media (max-width: 992px) {
+                padding-bottom: 30px;
+            }
+
+            @media (max-width: 575px) {
+                padding-bottom: 20px;
+            }
+        }
+
+        .careerWorkCart_desc{
+            color: $Grey-60;
+            margin-top: 50px;
+
+            @media (max-width: 1440px) {
+                margin-top: 30px;
+            }
+
+            @media (max-width: 992px) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.col_careerJobCart_otr{
+    border-right: 2px solid $Grey-15;
+    border-bottom: 2px solid $Grey-15;
+
+    .col_careerJobCart_inr{
+        padding: 50px;
+
+        @media (max-width: 1440px) {
+            padding: 40px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 24px;
+        }
+
+        .icon_otr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 88px;
+            height: 88px;
+            border-radius: 12px;
+            border: 1px solid $Grey-15;
+            background: linear-gradient(131deg, rgba(158, 255, 0, 0.20) -66.81%, rgba(158, 255, 0, 0.00) 37.19%);
+
+            @media (max-width: 1440px) {
+                width: 74px;
+                height: 74px;
+            }
+
+            @media (max-width: 575px) {
+                width: 56px;
+                height: 56px;
+            }
+
+            .icon{
+                width: 40px;
+                height: 40px;
+
+                @media (max-width: 1440px) {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                @media (max-width: 575px) {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .content_otr{
+            margin: 30px 0 56px;
+
+            @media (max-width: 1440px) {
+                margin: 24px 0 48px;
+            }
+
+            @media (max-width: 575px) {
+                margin: 24px 0 30px;
+            }
+
+            .careerJobCart_heading{
+                color: $White;
+            }
+
+            .careerJobCart_desc{
+                color: $Grey-90;
+                margin-top: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                margin-top: 14px;
+            }
+        }
+
+        .action_otr{
+
+            .apply_btn{
+                width: 100%;
+            }
+        }
+    }
+}

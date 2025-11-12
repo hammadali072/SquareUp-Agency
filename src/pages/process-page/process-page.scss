@@ -1,0 +1,93 @@
+@import '../../common-styles/variables.scss';
+
+.ProcessPage{
+    padding: 0 15px;
+
+    .container_fluid{
+        border-left: 2px solid $Grey-15;
+        border-right: 2px solid $Grey-15;
+        padding: 0;
+        overflow-x: hidden;
+
+        .process_container_main{
+
+        }
+    }
+}
+
+.col_processCart_otr{
+    border-left: 2px solid $Grey-15;
+    border-top: 2px solid $Grey-15;
+
+    .col_processCart_inr{
+        padding: 100px 50px;
+
+        @media (max-width: 1440px) {
+            padding: 80px 40px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 40px 24px;
+        }
+
+        .num_heading_otr{
+            display: flex;
+            align-items: flex-end;
+            gap: 0 14px;
+
+            .num{
+                font-size: 150px;
+                line-height: 120px;
+                font-family: $font-family-Barlow-SemiBold;
+                color: $Green-80;
+
+                @media (max-width: 1440px) {
+                    font-size: 120px;
+                    line-height: 96px;
+                }
+
+                @media (max-width: 992px) {
+                    font-size: 80px;
+                    line-height: 65px;
+                }
+            }
+
+            .heading_otr{
+                display: flex;
+                flex-direction: column;
+                gap: 26px 0;
+                width: 1100%;
+
+                @media (max-width: 1440px) {
+                    gap: 20px 0;
+                }
+
+                @media (max-width: 992px) {
+                    gap: 14px 0;
+                }
+
+                .heading{
+                    color: $Grey-60;
+                }
+
+                .line{
+                    width: 100%;
+                    border-bottom: 2px solid $Grey-15;
+                }
+            }
+        }
+
+        .desc{
+            color: $Grey-60;
+            margin-top: 50px;
+
+            @media (max-width: 1440px) {
+                margin-top: 40px;
+            }
+
+            @media (max-width: 992px) {
+                margin-top: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+@import '../../common-styles/variables.scss';
+
+.BlogPage{
+    padding: 0 15px;
+
+    .container_fluid{
+        border-left: 2px solid $Grey-15;
+        border-right: 2px solid $Grey-15;
+        padding: 0;
+        overflow-x: hidden;
+
+        .blog_container_main{
+
+            
+        }
+
+        .row_custom{
+
+        }
+    }
+}
+
+.col_blogCart_otr{
+    border: 1px solid $Grey-15;
+    padding: 0;
+
+    .col_blogCart_inr{
+
+        .blogCart_heading_otr{
+            padding: 30px 50px;
+            border-bottom: 2px solid $Grey-15;
+
+            @media (max-width: 1440px) {
+                padding: 24px 40px;
+            }
+
+            @media (max-width: 992px) {
+                padding: 20px 24px;
+            }
+
+            .blogCart_heading{
+                color: $Grey-60;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+
+                @media (max-width: 575px) {
+                    -webkit-line-clamp: 3;
+                }
+            }
+        }
+
+        .blogCart_img_content_otr{
+            padding: 30px 50px 100px;
+
+            @media (max-width: 1440px) {
+                padding: 30px 40px 80px;
+            }
+
+            @media (max-width: 992px) {
+                padding: 20px 24px 40px;
+            }
+
+            .img_otr{
+                width: 100%;
+                height: 420px;
+                border-radius: 12px;
+                overflow: hidden;
+                cursor: pointer;
+
+                @media (max-width: 1440px) {
+                    height: 340px;
+                    border-radius: 10px;
+                }
+
+                @media (max-width: 1200px) {
+                    height: 250px;
+                }
+
+                @media (max-width: 992px) {
+                    height: 190px;
+                }
+
+                @media (max-width: 767px) {
+                    height: 250px;
+                }
+
+                @media (max-width: 575px) {
+                    height: 190px;
+                }
+
+                @media (max-width: 320px) {
+                    height: 150px;
+                }
+
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .5s;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .blogCart_content{
+                margin-top: 30px;
+
+                @media (max-width: 1440px) {
+                    margin-top: 24px;
+                }
+                
+                .blogCart_heading_icon_otr{
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: 1fr auto;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+
+                    @media (max-width: 1440px) {
+                        margin-bottom: 24px;
+                    }
+
+                    @media (max-width: 992px) {
+                        align-items: flex-end;
+                    }
+
+                    @media (max-width: 420px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: baseline;
+                        gap: 20px 0;
+                    }
+
+                    .heading_link_otr{
+
+                        .content_heading{
+                            color: $White;
+                            transition: .3s;
+
+                            &:hover{
+                                color: $Green-50;
+                            }
+                        }
+
+                        .link_otr{
+                            margin-top: 10px;
+
+                            .link_text{
+                                padding: 10px 14px;
+                                border-radius: 8px;
+                                background: var(--Grey-15, #262626);
+                                color: $Grey-60;
+                                transition: .3s;
+
+                                @media (max-width: 992px) {
+                                    padding: 8px 10px;
+                                }
+
+                                &:hover{
+                                    color: $Green-50;
+                                }
+                            }
+                        }
+                    }
+
+                    .icon_otr{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 54px;
+                        height: 54px;
+                        border-radius: 8px;
+                        background: var(--Grey-15, #262626);
+                        cursor: pointer;
+                        transition: .3s;
+
+                        @media (max-width: 992px) {
+                            width: 46px;
+                            height: 46px;
+                            border-radius: 6px;
+                        }
+
+                        &:hover{
+
+                            .icon{
+                                transform: rotate(45deg);
+                            }
+                        }
+
+                        .icon{
+                            width: 34px;
+                            height: 34px;
+                            transition: .3s;
+
+                            @media (max-width: 992px) {
+                                width: 26px;
+                                height: 26px;
+                            }
+                        }
+                    }
+                }
+
+                .desc{
+                    color: $Grey-60;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+    
+}

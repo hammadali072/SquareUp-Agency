@@ -1,0 +1,154 @@
+@import '../../common-styles/variables.scss';
+
+.ContactPage{
+
+    .container_fluid{
+        border-right: 2px solid #262626;
+        border-left: 2px solid #262626;
+        padding: 0;
+
+        .cta_otr{
+            display: flex;
+            justify-content: center;
+            padding: 50px 40px;
+            border-bottom: 2px solid #262626;
+
+            @media (max-width: 1440px) {
+                padding: 40px 30px;
+            }
+
+            @media (max-width: 576px) {
+                padding: 30px 24px;
+            }
+
+            @media (max-width: 420px) {
+                padding: 24px 16px;
+            }
+
+            .cta_ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0 30px;
+
+                @media (max-width: 1440px) {
+                    gap: 0 20px;
+                }
+
+                @media (max-width: 768px) {
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+
+                @media (max-width: 576px) {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                .cta_li{
+
+                    @media (max-width: 576px) {
+                        width: 100%;
+                    }
+
+                    .cta_a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0 14px;
+                        padding: 18px 24px;
+                        background-color: $Grey-15;
+                        border-radius: 8px;
+
+                        @media (max-width: 1440px) {
+                            padding: 14px 20px;
+                            border-radius: 6px;
+                        }
+
+                        .cta_icon_otr{
+
+                            svg{
+                                color: $Green-50;
+
+                                @media (max-width: 1440px) {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+
+                                @media (max-width: 576px) {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+
+                        .cta_text{
+                            color: $White;
+                        }
+                    }
+
+                    .cta_div{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0 14px;
+                        padding: 18px 24px;
+                        background-color: $Grey-15;
+                        border-radius: 8px;
+
+                        @media (max-width: 1440px) {
+                            padding: 14px 20px;
+                            border-radius: 6px;
+                        }
+
+                        .cta_icon_otr{
+
+                            svg{
+                                color: $Green-50;
+
+                                @media (max-width: 1440px) {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+
+                                @media (max-width: 576px) {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+
+                        .cta_text{
+                            color: $White;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact_form_main{
+
+            .row_custom{
+                justify-content: center;
+
+                .col_contact_otr{
+                    padding: 80px;
+                    border-left: 2px solid $Grey-15;
+                    border-right: 2px solid $Grey-15;
+
+                    @media (max-width: 1440px) {
+                        padding: 60px;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding: 40px 30px;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding: 30px 24px;
+                    }
+                }
+            }
+        }
+    }
+}

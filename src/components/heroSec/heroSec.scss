@@ -1,0 +1,134 @@
+@import '../../common-styles/variables.scss';
+
+.HeroSection {
+    border-top: 2px solid $Grey-15;
+    padding: 0 15px;
+
+    @media (max-width: 575px) {
+        padding: 0;
+    }
+
+    @media (max-width: 575px) {
+        background-image: url('../../assets/hero-section-bg.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .container_fluid {
+        border-left: 2px solid $Grey-15;
+        border-right: 2px solid $Grey-15;
+        padding: 0;
+
+        @media (max-width: 575px) {
+            border: none;
+        }
+
+        .hero_inr {
+            padding: 112px 0 275px;
+            background-image: url('../../assets/hero-section-bg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+            @media (max-width: 991px) {
+                padding: 112px 24px 275px;
+            }
+
+            @media (max-width: 575px) {
+                padding: 80px 16px 200px;
+            }
+
+            .heading {
+                color: $White;
+                width: 730px;
+                max-width: 100%;
+                margin: auto;
+                text-align: center;
+
+                @media (max-width: 1440px) {
+                    width: 590px;
+                }
+
+                @media (max-width: 320px) {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+            }
+
+            .tags_main {
+                margin: 40px 0 50px;
+                display: flex;
+                justify-content: center;
+
+                .tags_otr {
+                    padding: 24px 40px;
+                    background: rgba(36, 36, 36, 0.20);
+                    backdrop-filter: blur(6px);
+                    border: 2px solid $Grey-15;
+                    border-radius: 12px;
+
+                    @media (max-width: 1440px) {
+                        padding: 18px 30px;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding: 18px 20px;
+                    }
+
+                    .text {
+                        color: $Grey-60;
+
+                        @media (max-width: 991px) {
+                            text-align: center;
+                        }
+
+                        @media (max-width: 1440px) {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+
+                        @media (max-width: 575px) {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+
+                        .text_inr {
+                            margin: 0 6px;
+                            padding: 12px 14px;
+                            background-color: $Grey-15;
+                            border-radius: 8px;
+                            color: $White;
+
+                            @media (max-width: 991px) {
+                                background-color: transparent;
+                                padding: 0;
+                                color: $Grey-60;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .action_main {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0 12px;
+
+                .action_otr {
+
+                    .work_btn,
+                    .cta_btn {
+
+                        @media (max-width: 1440px) {
+                            font-size: 14px;
+                            line-height: 17px;
+                            padding: 14px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
