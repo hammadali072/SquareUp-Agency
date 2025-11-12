@@ -1,13 +1,13 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.ContactPage{
+.ContactPage {
 
-    .container_fluid{
+    .container_fluid {
         border-right: 2px solid #262626;
         border-left: 2px solid #262626;
         padding: 0;
 
-        .cta_otr{
+        .cta_otr {
             display: flex;
             justify-content: center;
             padding: 50px 40px;
@@ -25,7 +25,7 @@
                 padding: 24px 16px;
             }
 
-            .cta_ul{
+            .cta_ul {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -45,13 +45,13 @@
                     width: 100%;
                 }
 
-                .cta_li{
+                .cta_li {
 
                     @media (max-width: 576px) {
                         width: 100%;
                     }
 
-                    .cta_a{
+                    .cta_a {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -65,9 +65,9 @@
                             border-radius: 6px;
                         }
 
-                        .cta_icon_otr{
+                        .cta_icon_otr {
 
-                            svg{
+                            svg {
                                 color: $Green-50;
 
                                 @media (max-width: 1440px) {
@@ -82,12 +82,12 @@
                             }
                         }
 
-                        .cta_text{
+                        .cta_text {
                             color: $White;
                         }
                     }
 
-                    .cta_div{
+                    .cta_div {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -101,9 +101,9 @@
                             border-radius: 6px;
                         }
 
-                        .cta_icon_otr{
+                        .cta_icon_otr {
 
-                            svg{
+                            svg {
                                 color: $Green-50;
 
                                 @media (max-width: 1440px) {
@@ -118,7 +118,7 @@
                             }
                         }
 
-                        .cta_text{
+                        .cta_text {
                             color: $White;
                         }
                     }
@@ -126,12 +126,12 @@
             }
         }
 
-        .contact_form_main{
+        .contact_form_main {
 
-            .row_custom{
+            .row_custom {
                 justify-content: center;
 
-                .col_contact_otr{
+                .col_contact_otr {
                     padding: 80px;
                     border-left: 2px solid $Grey-15;
                     border-right: 2px solid $Grey-15;

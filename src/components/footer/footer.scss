@@ -1,11 +1,11 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.footer{
+.footer {
     border-top: 2px solid $Grey-15;
 
-    .container_fluid{
+    .container_fluid {
 
-        .footer_top{
+        .footer_top {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -22,7 +22,7 @@
                 padding: 30px 0;
             }
 
-            .logo_main{
+            .logo_main {
 
                 @media (max-width: 992px) {
                     display: flex;
@@ -32,10 +32,10 @@
                     border-bottom: 2px solid $Grey-15;
                 }
 
-                .logo_otr{
+                .logo_otr {
                     width: 180px;
                     height: 60px;
-    
+
                     @media (max-width: 1440px) {
                         width: 120px;
                         height: 40px;
@@ -45,8 +45,8 @@
                         width: 148px;
                         height: 50px;
                     }
-    
-                    .logo{
+
+                    .logo {
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
@@ -54,7 +54,7 @@
                 }
             }
 
-            .nav_otr{
+            .nav_otr {
                 display: flex;
                 align-items: center;
                 gap: 110px;
@@ -67,10 +67,10 @@
                     gap: 0 48px;
                 }
 
-                .menu_ul{
+                .menu_ul {
                     display: flex;
                     align-items: center;
-                    gap:  30px;
+                    gap: 30px;
 
                     @media (max-width: 1440px) {
                         gap: 0 20px;
@@ -82,20 +82,20 @@
                         justify-content: center;
                     }
 
-                    .menu_li{
+                    .menu_li {
 
-                        .menu_link{
+                        .menu_link {
                             color: $White;
                             transition: .3s;
 
-                            &:hover{
+                            &:hover {
                                 color: $Green-50;
                             }
                         }
                     }
                 }
 
-                .social_otr{
+                .social_otr {
                     display: flex;
                     align-items: center;
                     gap: 0 20px;
@@ -111,18 +111,18 @@
                         display: none;
                     }
 
-                    .social_heading{
+                    .social_heading {
                         color: $Grey-90;
                     }
 
-                    .social_ul{
+                    .social_ul {
                         display: flex;
                         align-items: center;
                         gap: 0 14px;
 
-                        .social_li{
+                        .social_li {
 
-                            .social_a{
+                            .social_a {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -138,7 +138,7 @@
                                     height: 52px;
                                 }
 
-                                .icon{
+                                .icon {
                                     width: 24px;
                                     height: 24px;
                                     object-fit: contain;
@@ -154,7 +154,7 @@
                 }
             }
 
-            .responsive_social_otr{
+            .responsive_social_otr {
                 display: none;
                 align-items: center;
                 gap: 0 20px;
@@ -171,19 +171,19 @@
                     gap: 14px 0;
                     width: 100%;
                 }
-                
-                .social_heading{
+
+                .social_heading {
                     color: $Grey-90;
                 }
 
-                .social_ul{
+                .social_ul {
                     display: flex;
                     align-items: center;
                     gap: 0 14px;
 
-                    .social_li{
+                    .social_li {
 
-                        .social_a{
+                        .social_a {
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -199,7 +199,7 @@
                                 height: 52px;
                             }
 
-                            .icon{
+                            .icon {
                                 width: 24px;
                                 height: 24px;
                                 object-fit: contain;
@@ -215,14 +215,14 @@
             }
         }
 
-        .footer_bottom{
+        .footer_bottom {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 30px 24px;
             flex-wrap: wrap;
             padding: 50px 0;
-            
+
             @media (max-width: 1440px) {
                 padding: 40px 0;
             }
@@ -236,13 +236,13 @@
                 flex-direction: column;
             }
 
-            .link_otr{
+            .link_otr {
 
                 @media (max-width: 767px) {
                     width: 100%;
                 }
 
-                .link_ul{
+                .link_ul {
                     display: flex;
                     align-items: center;
                     gap: 0 30px;
@@ -252,7 +252,7 @@
                         width: 100%;
                     }
 
-                    .link_li{
+                    .link_li {
                         display: flex;
                         align-items: center;
                         gap: 0 10px;
@@ -264,36 +264,36 @@
                             justify-content: center;
                         }
 
-                        .icon_otr{
+                        .icon_otr {
                             width: 24px;
                             height: 24px;
 
-                            .icon{
+                            .icon {
                                 width: 100%;
                                 height: 100%;
                                 object-fit: contain;
                             }
                         }
 
-                        .link_a{
+                        .link_a {
                             color: $Grey-90;
                             transition: .3s;
 
-                            &:hover{
+                            &:hover {
                                 color: $Green-50;
                             }
                         }
 
-                        .link_text{
+                        .link_text {
                             color: $Grey-90;
                         }
                     }
                 }
             }
 
-            .copyright_text_otr{
+            .copyright_text_otr {
 
-                .copyright_text{
+                .copyright_text {
                     color: $Grey-60;
                 }
             }

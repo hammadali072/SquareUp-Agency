@@ -1,23 +1,23 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.FAQSection{
+.FAQSection {
     padding: 0 15px;
 
-    .container_fluid{
+    .container_fluid {
         padding: 0;
         border-left: 2px solid $Grey-15;
         border-right: 2px solid $Grey-15;
         overflow-x: hidden;
 
-        .row_custom{
+        .row_custom {
             justify-content: center;
             padding: 80px 0;
 
             @media (max-width: 1440px) {
                 padding: 60px 0;
             }
-            
-            .col_FAQ{
+
+            .col_FAQ {
                 border-left: 2px solid $Grey-15;
                 border-right: 2px solid $Grey-15;
                 border-top: 2px solid $Grey-15;
@@ -27,11 +27,11 @@
     }
 }
 
-.col_FaqCart_otr{
+.col_FaqCart_otr {
     border-bottom: 2px solid $Grey-15;
     width: 100%;
 
-    .col_FaqCart_inr{
+    .col_FaqCart_inr {
         padding: 34px 50px;
 
         @media (max-width: 1440px) {
@@ -51,7 +51,7 @@
                 gap: 0 20px;
             }
 
-            .num_otr{
+            .num_otr {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -73,15 +73,15 @@
                     border-radius: 6px;
                 }
 
-                .num{
+                .num {
                     color: $White;
                 }
             }
 
-            .Accordion_header_body{
+            .Accordion_header_body {
                 flex: 1;
 
-                .accordion-button{
+                .accordion-button {
                     display: grid;
                     grid-template-columns: 1fr auto;
                     align-items: center;
@@ -96,7 +96,7 @@
                     background-color: transparent;
                     transition: .3s;
                     width: 100%;
-                    
+
                     @media (max-width: 1440px) {
                         font-size: 18px;
                         line-height: 22px;
@@ -108,34 +108,34 @@
                         line-height: 20px;
                     }
 
-                    svg{
+                    svg {
                         transition: .3s;
                     }
 
                     &:focus {
                         box-shadow: none;
                     }
-            
+
                     &::after {
                         display: none;
                     }
-            
+
                     &:not(.collapsed) {
                         box-shadow: none;
                         color: $Green-50;
                         border-radius: 6px;
-            
+
                         svg {
                             transform: rotate(135deg);
                         }
                     }
 
-                    .collapsed{
+                    .collapsed {
                         border-radius: 0;
                     }
                 }
 
-                .accordion-body{
+                .accordion-body {
                     padding: 0;
                     font-size: 18px;
                     line-height: 28px;
@@ -143,19 +143,19 @@
                     color: $Grey-90;
 
                     @media (max-width: 1440px) {
-                      font-size: 16px;
-                      line-height: 24px;
+                        font-size: 16px;
+                        line-height: 24px;
                     }
-                  
+
                     @media (max-width: 575px) {
-                      font-size: 14px;
-                      line-height: 21px;
+                        font-size: 14px;
+                        line-height: 21px;
                     }
                 }
             }
         }
 
-        .accordion-item{
+        .accordion-item {
             background-color: transparent;
             border: none;
             border-radius: 0;

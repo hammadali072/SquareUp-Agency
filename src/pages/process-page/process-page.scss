@@ -1,25 +1,23 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.ProcessPage{
+.ProcessPage {
     padding: 0 15px;
 
-    .container_fluid{
+    .container_fluid {
         border-left: 2px solid $Grey-15;
         border-right: 2px solid $Grey-15;
         padding: 0;
         overflow-x: hidden;
 
-        .process_container_main{
-
-        }
+        .process_container_main {}
     }
 }
 
-.col_processCart_otr{
+.col_processCart_otr {
     border-left: 2px solid $Grey-15;
     border-top: 2px solid $Grey-15;
 
-    .col_processCart_inr{
+    .col_processCart_inr {
         padding: 100px 50px;
 
         @media (max-width: 1440px) {
@@ -30,12 +28,12 @@
             padding: 40px 24px;
         }
 
-        .num_heading_otr{
+        .num_heading_otr {
             display: flex;
             align-items: flex-end;
             gap: 0 14px;
 
-            .num{
+            .num {
                 font-size: 150px;
                 line-height: 120px;
                 font-family: $font-family-Barlow-SemiBold;
@@ -52,7 +50,7 @@
                 }
             }
 
-            .heading_otr{
+            .heading_otr {
                 display: flex;
                 flex-direction: column;
                 gap: 26px 0;
@@ -66,18 +64,18 @@
                     gap: 14px 0;
                 }
 
-                .heading{
+                .heading {
                     color: $Grey-60;
                 }
 
-                .line{
+                .line {
                     width: 100%;
                     border-bottom: 2px solid $Grey-15;
                 }
             }
         }
 
-        .desc{
+        .desc {
             color: $Grey-60;
             margin-top: 50px;
 

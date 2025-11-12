@@ -1,4 +1,4 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
 .HeroSection {
     border-top: 2px solid $Grey-15;

@@ -1,21 +1,19 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.CareerPage{
+.CareerPage {
     padding: 0 15px;
 
-    .container_fluid{
+    .container_fluid {
         padding: 0;
         border-left: 2px solid $Grey-15;
         border-right: 2px solid $Grey-15;
         overflow-x: hidden;
 
-        .CareerWorkSection{
-            
-        }
+        .CareerWorkSection {}
 
-        .OpeningSection{
+        .OpeningSection {
 
-            .opening_section_wrapper{
+            .opening_section_wrapper {
                 padding: 120px 50px 50px;
                 border-bottom: 2px solid $Grey-15;
 
@@ -31,19 +29,19 @@
                     padding: 40px 16px;
                 }
 
-                .opening_wrapper_heading{
+                .opening_wrapper_heading {
                     color: $White;
                 }
 
-                .opening_wrapper_desc{
+                .opening_wrapper_desc {
                     color: $Grey-90;
                     margin-top: 14px;
                 }
             }
 
-            .design_job_section{
+            .design_job_section {
 
-                .design_job_wrapper{
+                .design_job_wrapper {
                     border-bottom: 2px solid $Grey-15;
                     padding: 50px;
 
@@ -56,7 +54,7 @@
                         text-align: center;
                     }
 
-                    .design_job_wrapper_heading{
+                    .design_job_wrapper_heading {
                         color: $Grey-60;
                     }
                 }
@@ -65,11 +63,11 @@
     }
 }
 
-.col_careerWorkCart_otr{
+.col_careerWorkCart_otr {
     border-right: 2px solid $Grey-15;
     border-bottom: 2px solid $Grey-15;
 
-    .col_careerWorkCart_inr{
+    .col_careerWorkCart_inr {
         padding: 100px 50px;
 
         @media (max-width: 1440px) {
@@ -84,7 +82,7 @@
             padding: 40px 24px;
         }
 
-        .careerWorkCart_heading{
+        .careerWorkCart_heading {
             color: $Green-80;
             padding-bottom: 50px;
             border-bottom: 2px solid $Grey-15;
@@ -102,7 +100,7 @@
             }
         }
 
-        .careerWorkCart_desc{
+        .careerWorkCart_desc {
             color: $Grey-60;
             margin-top: 50px;
 
@@ -117,11 +115,11 @@
     }
 }
 
-.col_careerJobCart_otr{
+.col_careerJobCart_otr {
     border-right: 2px solid $Grey-15;
     border-bottom: 2px solid $Grey-15;
 
-    .col_careerJobCart_inr{
+    .col_careerJobCart_inr {
         padding: 50px;
 
         @media (max-width: 1440px) {
@@ -132,7 +130,7 @@
             padding: 24px;
         }
 
-        .icon_otr{
+        .icon_otr {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -152,7 +150,7 @@
                 height: 56px;
             }
 
-            .icon{
+            .icon {
                 width: 40px;
                 height: 40px;
 
@@ -168,7 +166,7 @@
             }
         }
 
-        .content_otr{
+        .content_otr {
             margin: 30px 0 56px;
 
             @media (max-width: 1440px) {
@@ -179,11 +177,11 @@
                 margin: 24px 0 30px;
             }
 
-            .careerJobCart_heading{
+            .careerJobCart_heading {
                 color: $White;
             }
 
-            .careerJobCart_desc{
+            .careerJobCart_desc {
                 color: $Grey-90;
                 margin-top: 20px;
                 overflow: hidden;
@@ -195,9 +193,9 @@
             }
         }
 
-        .action_otr{
+        .action_otr {
 
-            .apply_btn{
+            .apply_btn {
                 width: 100%;
             }
         }

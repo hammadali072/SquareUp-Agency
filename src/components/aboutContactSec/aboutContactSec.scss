@@ -1,4 +1,4 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
 .about_contact_sec {
     padding: 80px 60px;

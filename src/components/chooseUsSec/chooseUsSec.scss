@@ -1,25 +1,23 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.ChooseUsSection{
+.ChooseUsSection {
     padding: 0 15px;
 
-    .container_fluid{
+    .container_fluid {
         padding: 0;
         overflow-x: hidden;
         border-left: 2px solid $Grey-15;
         border-right: 2px solid $Grey-15;
 
-        .row_custom{
-
-        }
+        .row_custom {}
     }
 }
 
-.col_chooseUs_box_otr{
+.col_chooseUs_box_otr {
     border-bottom: 2px solid $Grey-15;
     border-right: 2px solid $Grey-15;
 
-    .col_chooseUs_box_inr{
+    .col_chooseUs_box_inr {
         padding: 80px;
 
         @media (max-width: 1440px) {
@@ -34,7 +32,7 @@
             padding: 30px 20px;
         }
 
-        .icon_main{
+        .icon_main {
             display: grid;
             align-items: center;
             grid-template-columns: auto 1fr;
@@ -49,7 +47,7 @@
                 margin-bottom: 24px;
             }
 
-            .icon_otr{
+            .icon_otr {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -70,7 +68,7 @@
                     border-radius: 6px;
                 }
 
-                .icon{
+                .icon {
                     width: 40px;
                     height: 40px;
                     object-fit: contain;
@@ -83,17 +81,17 @@
                 }
             }
 
-            .heading{
+            .heading {
                 color: $White;
                 transition: .3s;
 
-                &:hover{
+                &:hover {
                     color: $Green-50;
                 }
             }
         }
 
-        .desc{
+        .desc {
             color: $Grey-90;
         }
     }

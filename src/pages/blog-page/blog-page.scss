@@ -1,32 +1,27 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.BlogPage{
+.BlogPage {
     padding: 0 15px;
 
-    .container_fluid{
+    .container_fluid {
         border-left: 2px solid $Grey-15;
         border-right: 2px solid $Grey-15;
         padding: 0;
         overflow-x: hidden;
 
-        .blog_container_main{
+        .blog_container_main {}
 
-            
-        }
-
-        .row_custom{
-
-        }
+        .row_custom {}
     }
 }
 
-.col_blogCart_otr{
+.col_blogCart_otr {
     border: 1px solid $Grey-15;
     padding: 0;
 
-    .col_blogCart_inr{
+    .col_blogCart_inr {
 
-        .blogCart_heading_otr{
+        .blogCart_heading_otr {
             padding: 30px 50px;
             border-bottom: 2px solid $Grey-15;
 
@@ -38,7 +33,7 @@
                 padding: 20px 24px;
             }
 
-            .blogCart_heading{
+            .blogCart_heading {
                 color: $Grey-60;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -52,7 +47,7 @@
             }
         }
 
-        .blogCart_img_content_otr{
+        .blogCart_img_content_otr {
             padding: 30px 50px 100px;
 
             @media (max-width: 1440px) {
@@ -63,7 +58,7 @@
                 padding: 20px 24px 40px;
             }
 
-            .img_otr{
+            .img_otr {
                 width: 100%;
                 height: 420px;
                 border-radius: 12px;
@@ -95,26 +90,26 @@
                     height: 150px;
                 }
 
-                .img{
+                .img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     transition: .5s;
 
-                    &:hover{
+                    &:hover {
                         transform: scale(1.1);
                     }
                 }
             }
 
-            .blogCart_content{
+            .blogCart_content {
                 margin-top: 30px;
 
                 @media (max-width: 1440px) {
                     margin-top: 24px;
                 }
-                
-                .blogCart_heading_icon_otr{
+
+                .blogCart_heading_icon_otr {
                     display: grid;
                     align-items: center;
                     grid-template-columns: 1fr auto;
@@ -136,21 +131,21 @@
                         gap: 20px 0;
                     }
 
-                    .heading_link_otr{
+                    .heading_link_otr {
 
-                        .content_heading{
+                        .content_heading {
                             color: $White;
                             transition: .3s;
 
-                            &:hover{
+                            &:hover {
                                 color: $Green-50;
                             }
                         }
 
-                        .link_otr{
+                        .link_otr {
                             margin-top: 10px;
 
-                            .link_text{
+                            .link_text {
                                 padding: 10px 14px;
                                 border-radius: 8px;
                                 background: var(--Grey-15, #262626);
@@ -161,14 +156,14 @@
                                     padding: 8px 10px;
                                 }
 
-                                &:hover{
+                                &:hover {
                                     color: $Green-50;
                                 }
                             }
                         }
                     }
 
-                    .icon_otr{
+                    .icon_otr {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -185,14 +180,14 @@
                             border-radius: 6px;
                         }
 
-                        &:hover{
+                        &:hover {
 
-                            .icon{
+                            .icon {
                                 transform: rotate(45deg);
                             }
                         }
 
-                        .icon{
+                        .icon {
                             width: 34px;
                             height: 34px;
                             transition: .3s;
@@ -205,7 +200,7 @@
                     }
                 }
 
-                .desc{
+                .desc {
                     color: $Grey-60;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -216,5 +211,5 @@
             }
         }
     }
-    
+
 }

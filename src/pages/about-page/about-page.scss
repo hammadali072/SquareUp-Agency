@@ -1,15 +1,15 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
-.AboutUsPage{
+.AboutUsPage {
     padding: 0 15px;
 
-    .container_fluid{
+    .container_fluid {
         border-left: 2px solid $Grey-15;
         border-right: 2px solid $Grey-15;
         padding: 0;
         overflow-x: hidden;
 
-        .about_container_main{
+        .about_container_main {
             padding: 100px 150px;
             border-top: 2px solid $Grey-15;
             border-bottom: 2px solid $Grey-15;
@@ -29,14 +29,14 @@
             @media (max-width: 575px) {
                 padding: 40px 12px;
             }
-            
-            .about_container_row_custom{
+
+            .about_container_row_custom {
                 align-items: center;
                 gap: 36px 0;
 
-                .col_content_otr{
+                .col_content_otr {
 
-                    .col_content_inr{
+                    .col_content_inr {
                         padding-right: 50px;
 
                         @media (max-width: 1200px) {
@@ -47,11 +47,11 @@
                             padding: 0;
                         }
 
-                        .heading{
+                        .heading {
                             color: $White;
                         }
 
-                        .desc{
+                        .desc {
                             color: $Grey-90;
                             margin-top: 20px;
                             overflow: hidden;
@@ -63,16 +63,16 @@
                     }
                 }
 
-                .col_img_otr{
+                .col_img_otr {
 
-                    .col_img_inr{
+                    .col_img_inr {
 
                         @media (max-width: 992px) {
                             display: flex;
                             justify-content: center;
                         }
 
-                        .img{
+                        .img {
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
@@ -96,9 +96,9 @@
             }
         }
 
-        .story_main{
+        .story_main {
 
-            .story_wrapper{
+            .story_wrapper {
                 padding: 100px 50px;
 
                 @media (max-width: 1440px) {
@@ -109,14 +109,12 @@
                     padding: 40px 24px;
                 }
 
-                .heading{
+                .heading {
                     color: $White;
                 }
             }
 
-            .row_custom{
-                
-            }
+            .row_custom {}
         }
     }
 }

@@ -1,4 +1,4 @@
-@import '../../common-styles/variables.scss';
+@use '../../common-styles/variables.scss' as *;
 
 .ContactSection {
     padding: 0 15px;
